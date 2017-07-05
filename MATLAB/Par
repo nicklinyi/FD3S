@@ -1,0 +1,36 @@
+Simulation parameters  ========================================================
+DATA/name_of_run                                  	! seisfile, output file = 
+recfile                                           	! recfile, receiver file =
+84                  					! nt, number of time steps
+0.10                   					! dt in sec, time increment
+Model -------------------------------------------------------------------------
+1                        				! ibound, 1-> free surface at z=0.(no absorb.)
+35                        				! nabs, damping region thickness  
+Source ------------------------------------------------------------------------
+90.0                     				! xxs (deg), x-coord. center of source (theta)
+0.1                     				! yys (deg), y-coord. center of source (phi)
+150000.                  				! zzs (m), source depth
+1                       				! srctype, 1:f_x, 2:f_y, 3:f_z, 4:expl., 10:M_ij
+51.5                     				! dip (deg), dip  of slip vector
+90.                      				! rake (deg), rake  of slip vector
+0.                       				! strike (deg), strike  of slip vector
+MISC--------------------------------------------------------------------------
+200                       				! ssamp, snapshot sampling
+500                      				! iflush, seis output interval 
+90                       				! iplanex, ix for snaps
+95                       				! iplaney, iy for snaps
+68                       				! iplanez, iz for snaps,=izfree for surface
+1                        				! icheck, output sampling of max/min values
+88.2000                  				! xmin (deg), theta min
+92.2000                   				! xmax (deg), theta max
+-1.8                    				! ymin (deg), phi min
+2.2	                  				! ymax (deg), phi max
+5927000.                 				! zmin (m), min. radius 
+6371000.                 				! zmax (m), max. radius (surface)
+0							! is_aniso
+0							! is_diss
+1							! is_homogeneous (zero initial conditions)
+0							! is_formatted
+
+
+

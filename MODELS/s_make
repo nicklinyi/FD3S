@@ -1,0 +1,2 @@
+mpif90.mpich -mismatch -w generate_models.f90 -o generate_models
+mpif90.mpich -mismatch -w generate_initial.f90 -o generate_initial

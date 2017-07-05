@@ -1,0 +1,4 @@
+*.mod
+DATA/*
+MODELS/*.mod
+

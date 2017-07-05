@@ -1,0 +1,9 @@
+
+strange_variable=$(grep -v "seven.geophysik.uni-muenchen.de" mpi_machines)
+echo "-----------------------------------"
+for name in $strange_variable
+do
+echo renice $name
+ssh $name renice 15 -u fichtner
+echo "-----------------------------------"
+done

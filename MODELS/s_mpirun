@@ -1,0 +1,31 @@
+# define variables
+NUMBER_OF_PROCESSORS=8
+MACHINEFILE="mpi_machines"
+PROGRAM="generate_models"
+
+# add ssh keys and echo the variables
+#ssh-add
+echo "--------------------------------------------"
+echo "number of processors:" $NUMBER_OF_PROCESSORS
+echo "machinefile:" $MACHINEFILE
+echo "program:" $PROGRAM
+echo "--------------------------------------------"
+
+# run mpirun
+mpirun -np $NUMBER_OF_PROCESSORS -machinefile $MACHINEFILE $PROGRAM
+
+# define variables
+#NUMBER_OF_PROCESSORS=8
+#MACHINEFILE="mpi_machines08"
+#PROGRAM="generate_initial"
+
+# add ssh keys and echo the variables
+#ssh-add
+#echo "--------------------------------------------"
+#echo "number of processors:" $NUMBER_OF_PROCESSORS
+#echo "machinefile:" $MACHINEFILE
+#echo "program:" $PROGRAM
+#echo "--------------------------------------------"
+#
+# run mpirun
+#mpirun -np $NUMBER_OF_PROCESSORS $PROGRAM -machinefile $MACHINEFILE

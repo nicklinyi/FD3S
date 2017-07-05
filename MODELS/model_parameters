@@ -1,0 +1,24 @@
+Model size =======================================================================
+200		! nx - grid points in theta direction (complete model)
+200		! ny - grid points in phi direction (complete model)
+200		! nz - grid points in r direction (complete model)
+88.2		! xmin (deg), theta min
+92.2		! xmax (deg), theta max
+-1.8		! ymin (deg), phi min
+2.2		! ymax (deg), phi max
+5927000		! zmin in m
+6371000		! zmax in m
+Model parameters =================================================================
+1		! model_type: 1=homogeneous, 2=PREM_isotropic, 3=PREM_anisotropic
+8.0E+10		! mu for homogeneous model (N/m^2)
+1.19E+11	! lambda for homogeneous model (N/m^2)
+3543.25		! rho for homogeneous model (kg/m^3)
+1.0E+11		! A for homogeneous model (N/m^2)
+6.0E+10		! B for homogeneous model (N/m^2)
+2.0E+10		! C for homogeneous model (N/m^2)
+0		! is_aniso
+0		! is_formatted (formatted or unformatted files, see also Par)
+Parallelization parameters =======================================================
+2		! number of processes in x (theta) direction
+2		! number of processes in y (phi) direction
+2 		! number of processes in z (r) direction
