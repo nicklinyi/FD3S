@@ -14,7 +14,7 @@ $ make main.exe
 
 to run the `makefile`.
 
-** STRUCTURE AND COMPONENTS OF THE ALGORITHM **
+### STRUCTURE AND COMPONENTS OF THE ALGORITHM
 
 The makefile connects the different subfiles of the code.
 
@@ -126,3 +126,11 @@ Copyright by Tarje Nissen-Meyer, 2002
 Further information: tarje@geophysik.uni-muenchen.de
 
 Last change: March 9th 2002
+
+### What I have done
+- rewrite the makefiles in root directory and `MODELS` directory.
+- edit the `model_parameters` in `MODELS` directory.
+- modify the `README.md` to suit changes made by me.
+
+### Notification
+**You must run this code with >= 13 CPU cores, or you will get a run-time error.   
