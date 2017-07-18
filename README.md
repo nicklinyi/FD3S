@@ -5,7 +5,7 @@ The serial algorithm has been written to run on the
 Pacific Sierra F90 to F77 translator.
 
 
-** COMPILATION **
+### COMPILATION
 
 To compile the code, type
 ```
@@ -60,7 +60,7 @@ to be able to alter the frequencies afterwards. In this case, snapshots
 are automatically excluded.
 
 
-** Parameter control **
+### Parameter control
 
 Parameter settings are undertaken within the file `Par`, together with
 `params.h` for amount of grid points.
@@ -88,7 +88,7 @@ Especially due to the times spent on compiling on the Hitachi, the values
 of `params.h` should be chosen at first.
 
 
-** Running the Program **
+### Running the Program
 
 The compilation produces the executable `main.exe`
 
@@ -98,7 +98,7 @@ To run this file type
 $ make test
 ```
 
-** File storage and additional folders **
+### File storage and additional folders
 
 Object files of the compilation process are stored in a directory
 called `OBJECTS` as seen in the makefile.
