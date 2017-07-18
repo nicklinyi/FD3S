@@ -133,4 +133,4 @@ Last change: March 9th 2002
 - modify the `README.md` to suit changes made by me.
 
 ### Notification
-**You must run this code with >= 13 CPU cores, or you will get a run-time error.   
+**You must run this code with >= 13 CPU cores, or you will get a run-time error**.   
