@@ -9,17 +9,24 @@ MPICH_DIR =
 PROG = $MPICH_DIR/bin/mpif90
 PROGRUN = $MPICH_DIR/bin/mpiexec
 FFLAGS = -I$MPICH_DIR/include -L$MPICH_DIR/lib/ -lmpi
+
+
+OBJECT1 = generate_models.o 
+OBJECT2 = generate_initial.o
 NUM_PROCS=18
-OBJECTS = fd3s_modules.o fd3s_comm_tap.o fd3s_evolution.o fd3s_init.o fd3s_input.o fd3s_main.o  fd3s_oper.o fd3s_output.o
 
-test: main.exe
-	$(PROGRUN) -n $(NUM_PROCS) ./main.exe
+# run mpirun
+#mpirun -np $NUMBER_OF_PROCESSORS  $PROGRAM
 
-main.exe: $(OBJECTS)
-	$(PROG) $(FFLAGS) $(OBJECTS) -o $@
+test1: generate_model
+	$(PROGRUN) -n $(NUM_PROCS) ./generate_model
+
+generate_model: $(OBJECT1)
+	$(PROG) $(FFLAGS) $< -o $@
+
+generate_initial: $(OBJECT2)
+	$(PROG) $(FFLAGS) $< -o $@
+
 
 %.o : %.f90
 	$(PROG) $(FFLAGS) -c  $< 
-
-clean:
-	rm -f *.o *.exe *.mod

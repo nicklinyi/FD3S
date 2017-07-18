@@ -19,6 +19,6 @@ Model parameters ===============================================================
 0		! is_aniso
 0		! is_formatted (formatted or unformatted files, see also Par)
 Parallelization parameters =======================================================
-2		! number of processes in x (theta) direction
-2		! number of processes in y (phi) direction
+3		! number of processes in x (theta) direction
+3		! number of processes in y (phi) direction
 2 		! number of processes in z (r) direction
